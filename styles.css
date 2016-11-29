@@ -1,0 +1,97 @@
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+body {
+    font-family: Gotham;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 200;
+    font-style: italic;
+    transition: ease-in-out background 0.5s;
+}
+
+.btn:hover {
+    
+    border: none;
+    color: white;
+    animation:rainbow 2s;
+      -moz-animation:rainbow 2s infinite; /* Firefox */
+    -webkit-animation:rainbow 2s infinite; /* Safari and Chrome 8?*/
+    
+}
+
+@-moz-keyframes rainbow /* Firefox */
+    {
+        0% {background: #ff0000;}
+        10% {background: #ff8000;}
+        20% {background: #ffff00;}
+        30% {background: #80ff00;}
+        40% {background: #00ff00;}
+        50% {background: #00ff80;}
+        60% {background: #00ffff;}
+        70% {background: #0080ff;}
+        80% {background: #0000ff;}
+        90% {background: #8000ff;}
+        100% {background: #ff0080;}
+    }
+
+@-webkit-keyframes rainbow /* Safari and Chrome */
+    {
+        0% {background: #ff0000;}
+        10% {background: #ff8000;}
+        20% {background: #ffff00;}
+        30% {background: #80ff00;}
+        40% {background: #00ff00;}
+        50% {background: #00ff80;}
+        60% {background: #00ffff;}
+        70% {background: #0080ff;}
+        80% {background: #0000ff;}
+        90% {background: #8000ff;}
+        100% {background: #ff0080;}
+    }
+
+
+#content {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#confetti{
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: -1;
+}
